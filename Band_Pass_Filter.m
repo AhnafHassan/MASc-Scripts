@@ -1,4 +1,6 @@
 function output= Band_Pass_Filter(LowerCutOff,HigherCutOff,Fs,Signal)
+% Band-pass filtering function to extract EEG frequency bands
+
 FilterOrder= 2;
 
 [d1, c1] = butter(FilterOrder, [1/(Fs/2) 35/(Fs/2)], 'bandpass');
