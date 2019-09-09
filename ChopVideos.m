@@ -1,4 +1,5 @@
 function ChopVideos(Vid,Start,End,FolderNo,OPLocation)
+% Cut down video snippets from a larger video
 Vid.CurrentTime= Start;
 ii= 1; str= ['E:\Subject 02\Video\Garbage',num2str(FolderNo),'\'];
 
